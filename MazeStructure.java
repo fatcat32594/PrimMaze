@@ -6,7 +6,7 @@ public class MazeStructure {
 	private int width;
 	private int height;
 	private Cell[][] cells;
-	ArrayList<Tuple> frontier;
+	private ArrayList<Tuple> frontier;
 
 	public MazeStructure(int width, int height) {
 		this.height = height;
