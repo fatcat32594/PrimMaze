@@ -39,8 +39,8 @@ public class MazeStructure {
 		}
 
 	}
-
-	public void print() {
+	
+	public String toString() {
 		String output = String.join("", Collections.nCopies(this.width, "+---"));
 		output += "+\n";
 
@@ -60,7 +60,11 @@ public class MazeStructure {
 			}
 			output = output + "\n";
 		}
-		System.out.println(output);
+		return output;
+	}
+
+	public void print() {
+		System.out.println(toString());
 
 	}
 	
