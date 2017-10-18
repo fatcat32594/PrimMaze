@@ -2,7 +2,7 @@
 
 A basic maze generator using a randomized version of Prim's algorithm, implemented in java.
 
-## USAGE
+## Usage
 This may be used in another program to generate mazes, or it may be run separately to print a maze of size width by height
 
 After compiling, run with the following: 
