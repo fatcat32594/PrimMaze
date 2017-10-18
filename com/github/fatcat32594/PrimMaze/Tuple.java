@@ -1,3 +1,4 @@
+package com.github.fatcat32594.PrimMaze;
 
 public class Tuple {
 	private int x;

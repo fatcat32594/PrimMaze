@@ -1,3 +1,4 @@
+package com.github.fatcat32594.PrimMaze;
 import java.util.ArrayList;
 import java.util.Random;
 
