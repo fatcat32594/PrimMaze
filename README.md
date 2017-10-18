@@ -4,7 +4,8 @@ A basic maze generator using a randomized version of Prim's algorithm, implement
 
 ## Running
 After compiling, run with the following: 
-```java MazeStructure [maze width] [maze height]```
+```java MazeStructure [width] [height]```
+where width and height are integers greater than zero.
 
 ## Sample Output
 
