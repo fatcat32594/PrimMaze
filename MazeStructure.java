@@ -70,12 +70,20 @@ public class MazeStructure {
 	
 	public static void main(String[] args) {
 		if (args.length != 2)
-			System.err.println("Wrong number of arguments");
+			System.err.println("Error: Wrong number of arguments");
 		else {
-			int x = Integer.parseInt(args[0]);
-			int y = Integer.parseInt(args[1]);
-			MazeStructure maze = new MazeStructure(x, y);
-			maze.print();
+			try {
+				int x = Integer.parseInt(args[0]);
+				int y = Integer.parseInt(args[1]);
+				if (x > 0 && y > 0) {
+					MazeStructure maze = new MazeStructure(x, y);
+					maze.print();
+				} else {
+					System.err.println("Errpr: Width and height must be greater than zero");
+				}
+			} catch (NumberFormatException e) {
+				System.err.println("Error: Width and height should be integers");
+			}
 		}
 			
 	}
